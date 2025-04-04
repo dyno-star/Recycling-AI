@@ -17,3 +17,4 @@ Example: `python app.py --ip 0.0.0.0 --port 8000 -m paty_kerry.pt`
 [OpenCV](https://opencv.org/) - © 2000-2025 OpenCV.org. Licensed under Apache-v2.0
 
 [Ultralytics](https://github.com/ultralytics/ultralytics) - © 2023-2025 Ultralytics. Licensed under AGPL-v3.0
+# Recycling-AI
