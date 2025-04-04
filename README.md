@@ -1,20 +1,35 @@
-## Below is the script for our presentation for Codefest, but it can also double as a short description.
-We know our recycling system isn't perfect, but you don't need to feel like a waste of space for trying to recycle! Our software B.A.G.S which stands for Basic Artificial Garbage Sorter is designed to detect plastic bags to help with sorting recycling to prevent the loss of reusable materials. We're using OpenCV as our API and YOLO for object detection, writing our backend in Python. Using our custom trained model, we were able to train our model to detect different types of plastic bags with confidence between 70 and 90 percent. With more time, we can improve detection with plastic bags and implement detection with other forms of non-recyclables, like bubble wrap and plastic straws.
+# ♻️ Recycling-AI: Basic Artificial Garbage Sorter (B.A.G.S)
 
-### Website build instructions:
+> “You don’t have to feel like a waste of space for trying to recycle.”
 
-Options when building website:
-* -i or --ip: IP address of the device (required) 
-* -o or --port: Port number of the server (required)
-* -f or --frame_count: # of frames used to construct the background model (default = 32)
-* -m or --model: Model to use. Current options are katy_perry.pt and paty_kerry.pt. (default = katy_perry.pt)
-* -b of --backend: Backend to use. Current options are cuda and cpu. (default is cuda if it is available, otherwise default to cpu)
+Welcome to **Recycling-AI**, where we blend tech with sustainability!  
+We know the recycling system isn’t perfect, but we’re doing our part to make it better — one plastic bag at a time.
 
-Example: `python app.py --ip 0.0.0.0 --port 8000 -m paty_kerry.pt`
+## 🎯 What is B.A.G.S?
 
-### Attributions
+**B.A.G.S** stands for **Basic Artificial Garbage Sorter** — a computer vision tool that detects plastic bags and helps sort recycling more accurately, preventing contamination and preserving valuable recyclables.
 
-[OpenCV](https://opencv.org/) - © 2000-2025 OpenCV.org. Licensed under Apache-v2.0
+- 🔍 Uses **YOLOv5** for object detection  
+- 🧠 Custom-trained model with **70–90% confidence** detecting various plastic bag types  
+- 🧪 Built with **OpenCV** and **Python** for backend processing  
+- 🚀 Room to grow — detection for bubble wrap, plastic straws, and more coming soon!
 
-[Ultralytics](https://github.com/ultralytics/ultralytics) - © 2023-2025 Ultralytics. Licensed under AGPL-v3.0
-# Recycling-AI
+---
+
+## 🖥️ Run the Web App
+
+Clone the repo, make sure Python dependencies are installed, then run the app using the options below:
+
+### ⚙️ Command Line Options
+
+| Option             | Description                                           | Default           |
+|--------------------|-------------------------------------------------------|--------------------|
+| `-i`, `--ip`       | IP address of the device (**required**)              | N/A                |
+| `-o`, `--port`     | Port number of the server (**required**)             | N/A                |
+| `-f`, `--frame_count` | # of frames to build background model             | `32`               |
+| `-m`, `--model`    | Model to use (`katy_perry.pt`, `paty_kerry.pt`)     | `katy_perry.pt`    |
+| `-b`, `--backend`  | Backend: `cuda` or `cpu`                             | `cuda` (if available) |
+
+### ▶️ Example:
+```bash
+python app.py --ip 0.0.0.0 --port 8000 -m paty_kerry.pt
